@@ -3,12 +3,23 @@ package Branch;
 public class Sample_Branch_B1 {
     String name,id ;
     float cgpa ;
-    Sample_Branch_B1(String s,String s1,float f)
-    {
-        this.name = s;
-        this.id = s1;
-        this.cgpa = f;
+    int number_of_classes ;
+
+    public Sample_Branch_B1(String name, String id, float cgpa, int number_of_classes) {
+        this.name = name;
+        this.id = id;
+        this.cgpa = cgpa;
+        this.number_of_classes = number_of_classes;
     }
+
+    public int getNumber_of_classes() {
+        return number_of_classes;
+    }
+
+    public void setNumber_of_classes(int number_of_classes) {
+        this.number_of_classes = number_of_classes;
+    }
+
     public String getName()
     {
         return  name;
